@@ -1,0 +1,4 @@
+/assets/vendor/*
+!/assets/vendor/.keep
+/node_modules/
+.env
