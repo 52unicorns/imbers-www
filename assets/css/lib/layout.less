@@ -3,9 +3,32 @@
  */
 
 .section {
-  padding: @layout-large 0;
+  &:extend(.text-center);
+  padding: @layout-large * 2 0;
 }
 
 .section-odd:extend(.section) {
   background-color: @purple;
+  color: @white;
+}
+
+// Table columns.
+
+.table-columns {
+  text-align: left;
+
+  .row {
+    &:extend(.margin-bottom-large);
+    &:extend(.padding-bottom-large);
+    display: table;
+    width: 100%;
+
+    &:last-child { margin: 0; padding: 0; }
+  }
+
+  [class*='col-'] {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+  }
 }
