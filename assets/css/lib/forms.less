@@ -2,18 +2,27 @@
  * Form styles.
  */
 
-input[type='text'],
-input[type='password'],
-input[type='email'] {
-  box-shadow: none;
-  font-size: 18px;
-  line-height: 22px;
-  height: 64px;
-  min-width: 350px;
-  padding: @layout-medium;
-
-  &:focus {
+.form-control {
+  &[type='text'],
+  &[type='password'],
+  &[type='email'],
+  textarea& {
     box-shadow: none;
-    border-color: @light-blue;
+    font-size: 18px;
+    line-height: 22px;
+    height: 64px;
+    min-width: 359px;
+    padding: @layout-medium;
+
+    &:focus {
+      box-shadow: none;
+      border-color: @light-blue;
+    }
+  }
+
+  textarea& {
+    height: 200px;
+    min-width: 100%;
+    resize: none;
   }
 }

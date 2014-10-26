@@ -2,3 +2,4 @@
 !/assets/vendor/.keep
 /node_modules/
 .env
+.DS_Store

@@ -2,36 +2,57 @@
  * Landing page styles.
  */
 
- .top {
+// Top section.
+
+.top {
   min-height: 100%;
+  position: relative;
 }
 
 .intro {
   &:extend(.container);
+  max-height: 65%;
   text-align: center;
+  .absolutePosition(@layout-large, 0, 0, 0);
 }
 
 .demo {
-  height: 530px;
-  margin: 0 auto @layout-large * 2;
+  height: 340px;
+  margin: 0 auto;
   position: relative;
-  width: 264px;
+  width: 169px;
 
   .demo-phone {
-    background: url('img/iphone6.png') 0 0 no-repeat;
-    height: 530px;
-    width: 264px;
+    background: url('../img/iphone6.png') 0 0 no-repeat;
+    background-size: 169px 340px;
+    height: 340px;
+    width: 169px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .demo-screen {
     background: @purple;
-    height: 418px;
-    left: 15px;
+    height: 261px;
+    left: 12px;
     position: absolute;
-    top: 55px;
-    width: 234px;
+    top: 40px;
+    width: 146px;
   }
 }
+
+.scroll {
+  background: url('../img/arrow_scroll.png') 0 0 no-repeat;
+  display: block;
+  height: 64px;
+  width: 64px;
+  .absolutePosition(auto, 0, 0, 0);
+}
+
+// Video section.
 
 .video {
   border: 5px solid @black;
@@ -42,6 +63,33 @@
   padding: 3px;
 }
 
+// Features section.
+
+.features {
+  text-align: left;
+
+  & > .row {
+    margin-bottom: @layout-large * 2;
+
+    .feature-text {
+      padding-right: @layout-large;
+      padding-top: @layout-large + @layout-large * 2;
+    }
+
+    &:nth-child(even) {
+      .feature-text {
+        padding-left: @layout-large;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Team members.
+
 .profile {
   img {
     border-radius: 100%;
@@ -50,6 +98,8 @@
     margin-bottom: @layout-medium;
   }
 }
+
+// Timeline.
 
 .timeline {
   margin-bottom: @layout-medium;

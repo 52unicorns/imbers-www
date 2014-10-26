@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>imbers</title>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <%- css('application') %>
   <%- js('application') %>
 </head>
@@ -12,7 +12,7 @@
 
   <section class="top">
     <header class="header">
-      <h1>Imbers.</h1>
+      <h1 class="logo">Imbers.</h1>
     </header>
 
     <div class="intro">
@@ -21,6 +21,8 @@
         <div class="demo-screen"></div>
       </div>
     </div>
+
+    <a href="#" class="scroll js-scroll-down"></a>
   </section>
 
   <section class="section">
@@ -36,34 +38,34 @@
   </section>
 
   <section class="section-odd">
-    <div class="container table-columns">
+    <div class="container features">
       <div class="row">
-        <div class="col-md-6 padding-right-large">
+        <div class="col-md-5 col-md-offset-2 feature-text">
           <h2>Sign Up</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <div class="col-md-4">
-          <div style="border: 4px solid white; height: 568px;"></div>
+        <div class="col-md-3">
+          <div style="border: 4px solid white; height: 450px;"></div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-4">
-          <div style="border: 4px solid white; height: 568px;"></div>
+        <div class="col-md-3 col-md-offset-2">
+          <div style="border: 4px solid white; height: 450px;"></div>
         </div>
-        <div class="col-md-6 padding-left-large">
+        <div class="col-md-5 feature-text">
           <h2>Matchmaking</h2>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-6 padding-right-large">
+        <div class="col-md-5 col-md-offset-2 feature-text">
           <h2>Chat</h2>
           <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
         </div>
-        <div class="col-md-4">
-          <div style="border: 4px solid white; height: 568px;"></div>
+        <div class="col-md-3">
+          <div style="border: 4px solid white; height: 450px;"></div>
         </div>
       </div>
     </div>
@@ -72,11 +74,20 @@
   <section class="section border-bottom">
     <div class="container">
       <h1>Sign up for our free trial</h1>
+      <p class="margin-bottom-medium">We have a limited amount of invites we can send. Tell us why you should receive one here!</p>
       <form class="form-inline" role="form">
-        <div class="form-group margin-right-small">
-          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+        <div class="row margin-bottom-small">
+          <div class="form-group col-md-6 col-md-offset-3">
+            <textarea class="form-control" placeholder="Tell us why here"></textarea>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Sign up</button>
+
+        <div class="row">
+          <div class="form-group col-md-6 col-md-offset-3">
+            <input type="email" class="form-control margin-right-small" id="exampleInputEmail2" placeholder="Your email">
+            <button type="submit" class="btn btn-primary">Invite me!</button>
+          </div>
+        </div>
       </form>
     </div>
   </section>
@@ -93,31 +104,39 @@
         <p class="margin-bottom-large">Some guys from Sofia, Bulgaria. bla bla. We called ourselves <strong>52 unicorns</strong> not so long ago. blabla</p>
 
         <div class="row">
-          <article class="col-md-4 profile">
+          <article class="col-md-3 profile">
             <div class="row">
-              <img src="https://pbs.twimg.com/profile_images/427342392228732928/Q92ozpXG_400x400.jpeg" class="col-md-10">
+              <img src="https://pbs.twimg.com/profile_images/427342392228732928/Q92ozpXG_400x400.jpeg" class="col-md-9">
             </div>
             <h4>Veselin Todorov</h4>
             <p>Back-end stuff and unicorns</p>
             <a href="#">That's Veselin on Twitter</a>
           </article>
 
-          <article class="col-md-4 profile">
+          <article class="col-md-3 profile">
             <div class="row">
-              <img src="https://pbs.twimg.com/profile_images/2147515660/IMG_0144_2_400x400.jpg" class="col-md-10">
+              <img src="https://pbs.twimg.com/profile_images/2147515660/IMG_0144_2_400x400.jpg" class="col-md-9">
             </div>
             <h4>Alexander Petkov</h4>
             <p>Design and Front-end info</p>
             <a href="#">That's Alexander on Twitter</a>
           </article>
 
-          <article class="col-md-4 profile">
+          <article class="col-md-3 profile">
             <div class="row">
-              <img src="https://avatars3.githubusercontent.com/u/1281720?v=2&s=460" class="col-md-10">
+              <img src="https://avatars3.githubusercontent.com/u/1281720?v=2&s=460" class="col-md-9">
             </div>
             <h4>Dimitar Valchanov</h4>
             <p>Mobile development</p>
             <a href="#">That's Dimitar on Twitter</a>
+          </article>
+
+          <article class="col-md-3 profile">
+            <div class="row">
+              <img src="http://blog.ventfitness.com/wp-content/uploads/2014/08/tumblr_n08mc20A6E1tpo3v2o1_1280.jpg" class="col-md-9">
+            </div>
+            <h4>Destiny</h4>
+            <p>Destiny - the fat unicorn is here</p>
           </article>
         </div>
       </div>
