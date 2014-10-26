@@ -2,6 +2,8 @@
   "name": "www",
   "private": true,
   "dependencies": {
-    "bootstrap": "3.1.1"
+    "bootstrap": "3.1.1",
+    "jquery.scrollTo": "1.4.13",
+    "magnific-popup": "0.9.9"
   }
 }

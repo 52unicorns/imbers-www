@@ -5,6 +5,7 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <%- css('application') %>
+  <%- js('jquery') %>
   <%- js('application') %>
 </head>
 
@@ -12,20 +13,22 @@
 
   <section class="top">
     <header class="header">
-      <h1 class="logo">Imbers.</h1>
+      <h1 class="logo js-logo">Imbers.</h1>
     </header>
 
     <div class="intro">
       <div class="demo">
         <div class="demo-phone js-demo-bg"></div>
-        <div class="demo-screen"></div>
+        <div class="demo-screen">
+          <img src="http://icdn8.digitaltrends.com/image/iphone-6s-plus-screenshot-6-1125x2001.jpg">
+        </div>
       </div>
     </div>
 
-    <a href="#" class="scroll js-scroll-down"></a>
+    <a href="" class="scroll js-scroll-down"></a>
   </section>
 
-  <section class="section">
+  <section class="section js-video">
     <div class="container">
       <h1>Thin nice heading.</h1>
 
@@ -157,7 +160,7 @@
               <div class="timeline-entry col-md-6 col-xs-6">
                 <div class="col-md-8 col-xs-8 timeline-entry-info">
                   Kick-off
-                  <img src="http://3lr72f3dhlbp3scfdb49y0cz.wpengine.netdna-cdn.com/assets/kickoff.jpg">
+                  <a class="js-timeline-photo" href="http://3lr72f3dhlbp3scfdb49y0cz.wpengine.netdna-cdn.com/assets/kickoff.jpg"><img src="http://3lr72f3dhlbp3scfdb49y0cz.wpengine.netdna-cdn.com/assets/kickoff.jpg"></a>
                 </div>
 
                 <div class="col-md-4 col-xs-4 timeline-entry-date">
@@ -168,7 +171,7 @@
               <div class="timeline-entry col-md-6 col-xs-6">
                 <div class="col-md-8 col-xs-8 timeline-entry-info">
                   Landing page design
-                  <img src="http://3lr72f3dhlbp3scfdb49y0cz.wpengine.netdna-cdn.com/assets/kickoff.jpg">
+                  <a class="js-timeline-photo" href="http://www.curver.com/assets/images/wysiwyg/Design%20and%20innovation.jpg"><img src="http://www.curver.com/assets/images/wysiwyg/Design%20and%20innovation.jpg"></a>
                 </div>
 
                 <div class="col-md-4 col-xs-4 timeline-entry-date">

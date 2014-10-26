@@ -25,6 +25,7 @@
   .demo-phone {
     background: url('../img/iphone6.png') 0 0 no-repeat;
     background-size: 169px 340px;
+    display: none;
     height: 340px;
     width: 169px;
 
@@ -35,18 +36,22 @@
   }
 
   .demo-screen {
-    background: @purple;
     height: 261px;
     left: 12px;
     position: absolute;
     top: 40px;
     width: 146px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
 .scroll {
   background: url('../img/arrow_scroll.png') 0 0 no-repeat;
-  display: block;
+  display: none;
   height: 64px;
   width: 64px;
   .absolutePosition(auto, 0, 0, 0);
@@ -143,8 +148,13 @@
         cursor: pointer;
         height: 32px;
         margin-right: @layout-small;
+        transition: transform .25s linear;
         vertical-align: middle;
         width: 32px;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
 
