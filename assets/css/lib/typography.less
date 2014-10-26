@@ -39,3 +39,31 @@ h6 {
 h1 {
   margin-bottom: @layout-large;
 }
+
+// Links.
+
+a {
+  display: inline-block;
+  padding-bottom: 1px;
+  position: relative;
+  transition: color .2s linear;
+
+  &:after {
+    background: transparent;
+    content: '';
+    display: block;
+    height: 1px;
+    margin: auto;
+    transition: width .3s ease, background-color .3s ease;
+    width: 0px;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    &:after {
+      background: @link-hover-color;
+      width: 100%;
+    }
+  }
+}
