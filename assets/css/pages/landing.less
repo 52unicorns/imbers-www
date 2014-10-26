@@ -93,6 +93,34 @@
   }
 }
 
+// Product Hunt info.
+
+.info-sections {
+  & > .row {
+    &:extend(.border-bottom);
+    &:extend(.padding-bottom-medium);
+    &:extend(.margin-bottom-medium);
+    text-align: left;
+
+    &:last-child {
+      border-bottom: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  & > .row:nth-child(even) {
+    [class*='col-md-']:first-child {
+      float: right;
+    }
+  }
+
+  img {
+    height: 120px;
+    width: 120px
+  }
+}
+
 // Team members.
 
 .profile {
